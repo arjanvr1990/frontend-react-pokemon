@@ -1,1 +1,119 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #1a1a1a;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.pokemon-image {
+    max-width: 100%; /* Zorgt ervoor dat de afbeelding zich aanpast aan de breedte van het venster */
+    height: auto; /* Behoudt de juiste beeldverhouding en schaalt de hoogte automatisch */
+    display: block; /* Verwijder eventuele onderliggende ruimte */
+    margin: 0 auto; /* Centreert de afbeelding horizontaal */
+    max-height: 300px; /* Beperkt de maximale hoogte van de afbeelding */
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px; /* Adjust margin as needed */
+}
+
+.pagination button {
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #0074cc; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the "Previous" button */
+.pagination button:first-child {
+    margin-right: auto; /* Pushes it to the left */
+}
+
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 -5px;
+    padding: 20px;
+
+}
+
+.pokemon-list ul {
+    padding: 0; /* Verwijder de standaard padding van de <ul> */
+    list-style-type: none; /* Verwijder standaard opsommingstekens */
+}
+
+.pokemon-details {
+    background-color: white;
+    border: 1px none #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: calc(20% - 20px); /* 20% width with a 20px gap between items */
+    box-sizing: border-box;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-details h2 {
+    margin: 0;
+}
+
+.pokemon-details img {
+    max-width: 100%;
+}
+
+.pokemon-list ul li {
+    background-color: darkgrey; /* Achtergrondkleur naar wens */
+    padding: 10px; /* Voeg wat padding toe voor ruimte tussen de tekst en de randen */
+    margin: 5px 0; /* Voegt 5px marges boven en onder elke <li> toe */
+    border-radius: 5px; /* Voegt afgeronde hoeken toe voor een subtiel 3D-effect */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Voegt een lichte schaduw toe voor een 3D-effect */
+    color: white; /* Tekstkleur voor contrast */
+}
+
+.pokemon-list ul li:hover {
+    background-color: #0054a8; /* Achtergrondkleur wijzigen bij hover (optioneel) */
+}
+
+h3 {
+    margin: 3px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .pokemon-details {
+        width: calc(50% - 20px); /* 50% width on smaller screens */
+    }
+}
 /*Schrijf hier jouw eigen CSS!*/
