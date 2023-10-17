@@ -50,6 +50,8 @@ function App() {
             setCurrentPage(currentPage - 1);
         }
     };
+
+    //Add capital first letter
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
@@ -80,14 +82,24 @@ function App() {
                             alt={`Sprite of ${pokemon.name}`}
                         />
                         <div className="pokemon-list-info">
-                        <p><h3>Moves:</h3> {pokemon.moves.length}</p>
-                        <p><h3>Weight:</h3> {pokemon.weight}</p>
+
+                        <p>
+                            <h3>Moves:</h3>
+                            {pokemon.moves.length}
+                        </p>
+
+                        <p>
+                            <h3>Weight:</h3>
+                            {pokemon.weight}
+                        </p>
+
                         <h3>Abilities:</h3>
                         <ul>
                             {pokemon.abilities.map((ability, index) => (
                                 <li key={index}>{capitalizeFirstLetter(ability.ability.name)}</li>
                             ))}
                         </ul>
+
                         </div>
 
                     </div>

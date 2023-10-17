@@ -57,8 +57,8 @@ h1 {
     max-width: 1200px;
     margin: 0 -5px;
     padding: 20px;
-
 }
+
 
 .pokemon-list ul {
     padding: 0; /* Verwijder de standaard padding van de <ul> */
@@ -76,6 +76,16 @@ h1 {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
+.pokemon-details:hover {
+    transform: scale(1.05); /* Vergroot het element met een schaal van 1.7x bij hover */
+    transition: transform 0.3s ease; /* Voeg een overgang toe voor soepele animatie */
+}
+
+.pokemon-details:not(:hover) {
+    transform: scale(1); /* Zet de schaal terug naar normaal voor niet-gehoverde elementen */
+}
+
 .pokemon-details h2 {
     margin: 0;
 }
@@ -85,7 +95,7 @@ h1 {
 }
 
 .pokemon-list ul li {
-    background-color: darkgrey; /* Achtergrondkleur naar wens */
+    background-color: lightgray; /* Achtergrondkleur naar wens */
     padding: 10px; /* Voeg wat padding toe voor ruimte tussen de tekst en de randen */
     margin: 5px 0; /* Voegt 5px marges boven en onder elke <li> toe */
     border-radius: 5px; /* Voegt afgeronde hoeken toe voor een subtiel 3D-effect */
@@ -94,7 +104,7 @@ h1 {
 }
 
 .pokemon-list ul li:hover {
-    background-color: #0054a8; /* Achtergrondkleur wijzigen bij hover (optioneel) */
+    background-color: orange; /* Achtergrondkleur wijzigen bij hover (optioneel) */
 }
 
 h3 {
